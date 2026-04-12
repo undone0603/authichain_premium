@@ -1,14 +1,14 @@
 {
   "framework": "nextjs",
-  "buildCommand": "cd app && npm run build",
-  "installCommand": "cd app && npm install",
-  "outputDirectory": "app/.next",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
   "functions": {
-    "app/api/**/*.ts": {
+    "api/**/*.ts": {
       "memory": 1024,
       "maxDuration": 30
     },
-    "app/api/**/*.js": {
+    "api/**/*.js": {
       "memory": 1024,
       "maxDuration": 30
     }
